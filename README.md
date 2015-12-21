@@ -29,11 +29,13 @@ title = "your blog title"
 
 [author]
 name = "hugo"
-# email will use for gravatar
+# email will be used for gravatar
 email = ""
+# public_email will be used for mailto link
+public_email = ""
 
 [taxonomies]
-category = "categories"
+tag = "tags"
 
 [params]
 # site description, will show under navigation
@@ -42,6 +44,13 @@ description = ""
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss = "/index.xml"
 subscribe_email = ""
+
+
+# Menu links
+menu_home_text = "Home"
+menu_about_url = "http://about.me/myuser"
+menu_about_text = "About Me"
+menu_archives_text = "Archives"
 
 # social links
 facebook_user = ""
@@ -65,6 +74,9 @@ facebook_like = true
 twitter_tweet_button = true
 google_plus_one = "true"
 addthis_profile_id = ""
+
+# follow links
+twitter_follow = true
 
 # Disqus Comments
 disqus_short_name = ""

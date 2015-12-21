@@ -16,8 +16,8 @@
 <nav id="main-nav">{{ partial "navigation.html" . }}</nav>
 <nav id="sub-nav">
 	<div class="social">
-		{{ if $.Site.Author.email }}
-			<a class="email" href='mailto:{{ $.Site.Author.email }}' title="Email">Email</a>
+		{{ if $.Site.Author.public_email }}
+			<a class="email" href='mailto:{{ $.Site.Author.public_email }}' title="Email">Email</a>
 		{{ end }}
 		{{ if $.Site.Params.facebook_user }}
 			<a class="facebook" href='http://www.facebook.com/{{ $.Site.Params.facebook_user }}' title="Facebook">Facebook</a>

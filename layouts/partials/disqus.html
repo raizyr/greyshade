@@ -4,7 +4,7 @@
     // var disqus_developer = 1;
     var disqus_shortname = '{{ $.Site.Params.disqus_short_name }}';
 
-    // show comment count for index and category pages.
+    // show comment count for index and tag pages.
     {{ if and ($.Site.Params.disqus_show_comment_count) (not .IsPage) }}
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

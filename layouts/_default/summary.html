@@ -1,7 +1,7 @@
 <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="meta">
 		<div class="date">{{ partial "post/date.html" . }}</div>
-		<div class="tags">{{ partial "post/categories.html" . }}</div>
+		<div class="tags">{{ partial "post/tags.html" . }}</div>
 		{{ if and (and ($.Site.Params.disqus_short_name) (ne .Params.comments "false")) ($.Site.Params.disqus_show_comment_count) }}
 			<span class="comments"><a href="{{ .Permalink }}#disqus_thread">Comments</a></span>
 		{{ end }}
