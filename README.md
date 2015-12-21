@@ -31,6 +31,8 @@ title = "your blog title"
 name = "hugo"
 # email will use for gravatar
 email = ""
+# public_email will be shown as mailto: link
+public_email = ""
 
 [taxonomies]
 category = "categories"
