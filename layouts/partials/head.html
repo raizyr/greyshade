@@ -23,7 +23,7 @@
 	{{ end }}
 	<link rel="canonical" href="{{ .Permalink }}">
 	{{ if isset .Site.Params "favicon_partial" }}
-	{{ partial "favicon.html" . }}
+	{{ partial $.Site.Params.favicon_partial . }}
 	{{ else }}
 	<link href="{{ .Site.BaseURL }}/favicon.png" rel="shortcut icon">
 	{{ end }}
